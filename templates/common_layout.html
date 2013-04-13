@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link REL="ICON" HREF="{{ STATIC_URL }}img/favicon.ico">
+  <link REL="SHORTCUT ICON" HREF="{{ STATIC_URL }}img/favicon.ico">
+  <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.css"/>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.9.1.min.js"></script>
+  <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/underscore-min.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}js/backbone-min.js"></script>
+  <script src="{{ STATIC_URL }}js/jquery.blockUI.js"></script>
+
+  <script type="text/javascript">
+
+
+    $(function () {
+
+    });
+  </script>
+  {% block head %}   {% endblock %}
+  <title>{% block title %}TripScanner{% endblock %}</title>
+
+</head>
+<body>
+
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/"><img src="{{ STATIC_URL }}images/" width="92" height="33" /></a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+  </div>
+  {% block content %}  {% endblock %}
+</div>
+<footer>
+  <div class="row">
+    <div class="span4 offset1">
+      <p>
+        <a href="/about">About</a>
+        <a href="/terms">&nbspTerms</a>
+        <a href="/support">&nbspSupport</a>
+        <a href="/privacy">&nbspPrivacy</a>
+        <a href="/contact">&nbspContact</a>
+      </p>
+
+
+    </div>
+
+    <div class="span4">
+      <p align=right>
+        &copy;2013 TripScanner. All rights reserved.</p>
+      </p>
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
